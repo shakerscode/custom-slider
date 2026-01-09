@@ -89,7 +89,3 @@ Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:30
 ## 📄 License
 
 This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
-
----
-
-### Would you like me to add a **"How to Customize"** section detailing how to change the swipe sensitivity or the number of visible cards in the stack?
