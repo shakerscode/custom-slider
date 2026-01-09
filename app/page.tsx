@@ -1,11 +1,9 @@
- 
-import StackedSlider from "@/component/EventSlider"; 
+import StackedSlider from "@/component/EventSlider";
 import { Home, BookOpen, ShoppingBag, LayoutGrid, User } from "lucide-react";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-black text-white flex flex-col justify-end overflow-hidden">
-      
       {/* Dynamic Background or Content Area */}
       <div className="flex-1 flex items-center justify-center p-4">
         <StackedSlider />
@@ -25,13 +23,23 @@ export default function Page() {
   );
 }
 
-function NavItem({ icon, label, active = false }: { icon: React.ReactNode, label: string, active?: boolean }) {
+function NavItem({
+  icon,
+  label,
+  active = false,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  active?: boolean;
+}) {
   return (
-    <div className={`flex flex-col items-center gap-1 cursor-pointer ${active ? 'text-blue-500' : 'text-zinc-500'}`}>
-      <div className={active ? 'bg-blue-600/10 p-2 rounded-xl text-blue-500' : ''}>
+    <div className={"flex flex-col items-center gap-0.5 cursor-pointer rounded-full"}>
+      <div className={active ? "bg-blue-600  p-2 text-white rounded-full" : "p-2"}>
         {icon}
       </div>
-      <span className="text-[10px] font-medium uppercase tracking-wider">{label}</span>
+      <span className="text-[10px] font-medium uppercase tracking-wider">
+        {label}
+      </span>
     </div>
   );
 }
